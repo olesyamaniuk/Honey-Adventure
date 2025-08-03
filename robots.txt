@@ -3,4 +3,4 @@ Disallow: /admin/
 Disallow: /private/
 Allow: /
 
-Sitemap: https://globzio.site/sitemap.xml
+Sitemap: https://honeyadventurepuzzle.com/sitemap.xml

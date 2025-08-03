@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Goldman:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Candal&family=Quicksand:wght@300..700&display=swap");
 
 * {
   -webkit-box-sizing: border-box;
@@ -7,9 +7,9 @@
 
 html {
   scroll-behavior: smooth;
-  background: #170f23;
+  background: #ffffff;
 
-  color: #ffffff;
+  color: #000000;
 }
 
 body {
@@ -60,17 +60,17 @@ a {
   scale: 120%;
 }
 
-.y-k-header.is-open .y-k-header-background {
+.y-l-header.is-open .y-l-header-background {
   left: 0;
 }
-.y-k-header-button-wrapper {
+.y-l-header-button-wrapper {
   margin-left: auto;
 }
-.y-k-header-icon {
+.y-l-header-icon {
   display: none;
 }
 
-.y-k-header-icon-button {
+.y-l-header-icon-button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -78,22 +78,22 @@ a {
   border: none;
   border-radius: 50%;
 }
-.y-k-navigation-list.is-open {
+.y-l-navigation-list.is-open {
   right: 0;
 }
-.y-k-header-icon-menu {
+.y-l-header-icon-menu {
   display: block;
 }
 
-.y-k-header-icon-button.is-open .y-k-header-icon-menu {
+.y-l-header-icon-button.is-open .y-l-header-icon-menu {
   display: none;
 }
 
-.y-k-header-icon-button.is-open .y-k-header-icon-close {
+.y-l-header-icon-button.is-open .y-l-header-icon-close {
   display: block;
 }
 
-.y-k-header {
+.y-l-header {
   position: fixed;
   width: 100%;
   z-index: 5;
@@ -101,9 +101,10 @@ a {
   background: transparent;
   display: flex;
   height: 80px;
+  background: #648ffc;
 }
 
-.y-k-header-background {
+.y-l-header-background {
   position: absolute;
   top: 0;
   right: 0;
@@ -111,30 +112,31 @@ a {
   left: 100%;
   z-index: -1;
   transition: left 0.3s ease;
+  background: #648ffc;
 }
-.y-k-header.is-open .y-k-header-background {
+.y-l-header.is-open .y-l-header-background {
   left: 0;
 }
-.y-k-header-button-wrapper {
+.y-l-header-button-wrapper {
   margin-right: auto;
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
 
-.y-k-header-icon-menu {
+.y-l-header-icon-menu {
   display: block;
 }
 
-.y-k-header-icon-button.is-open .y-k-header-icon-menu {
+.y-l-header-icon-button.is-open .y-l-header-icon-menu {
   display: none;
 }
 
-.y-k-header-icon-button.is-open .y-k-header-icon-close {
+.y-l-header-icon-button.is-open .y-l-header-icon-close {
   display: block;
 }
 
-.y-k-navigation {
+.y-l-navigation {
   display: -ms-flexbox;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -150,7 +152,7 @@ a {
   position: relative;
 }
 
-.y-k-navigation-list {
+.y-l-navigation-list {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -164,70 +166,69 @@ a {
   padding: 0px 16px 26px;
   border-radius: 24px;
   gap: 28px;
-  background: #170f23;
+  background: #648ffc;
 
   margin-top: 16px;
 }
 
-.y-k-navigation-list.is-open {
+.y-l-navigation-list.is-open {
   right: 0;
 }
 
-.y-k-navigation-link {
+.y-l-navigation-link {
   transition: all 0.3s ease-in-out;
   text-decoration: none;
-  color: #f4f4f4;
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
+  color: #ffffff;
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
   font-size: 22px;
   leading-trim: NONE;
   line-height: 130%;
   letter-spacing: 0%;
 }
 
-.y-k-navigation-link:hover,
-.y-k-navigation-link:focus {
-  color: #da1c5c;
+.y-l-navigation-link:hover,
+.y-l-navigation-link:focus {
+  color: #f77d4a;
 }
 
-.y-k-header.is-open {
+.y-l-header.is-open {
   background-color: transparent;
 }
 
-.y-k-navigation-img {
+.y-l-navigation-img {
   display: none;
 }
 
-@media screen and (min-width: 1206px) {
-  .y-k-navigation-img {
+@media screen and (min-width: 1207px) {
+  .y-l-navigation-img {
     display: flex;
-    margin-right: 430px;
+    margin-right: 436px;
   }
-  .y-k-header-icon-title {
+  .y-l-header-icon-title {
     display: none;
   }
-  .y-k-header-button-wrapper {
+  .y-l-header-button-wrapper {
     display: none;
   }
-  .y-k-header {
-    height: 64px;
+  .y-l-header {
+    height: 80px;
 
     display: flex;
     align-items: center;
     justify-content: center;
     z-index: 1000;
 
-    backdrop-filter: blur(48px);
-    background: #170f2303;
+    background: #648ffc;
   }
 
-  .y-k-header-background {
+  .y-l-header-background {
   }
-  .y-k-header-icon-button {
+  .y-l-header-icon-button {
     display: none;
   }
-  .y-k-navigation {
+  .y-l-navigation {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -236,7 +237,7 @@ a {
     margin: auto;
   }
 
-  .y-k-navigation-list {
+  .y-l-navigation-list {
     background-color: transparent;
     flex-direction: row;
     display: flex;
@@ -245,7 +246,7 @@ a {
     margin: auto;
     padding-block: 0;
     flex: 1;
-    gap: 40px;
+    gap: 46px;
     height: 0px;
     display: flex;
     justify-content: center;
@@ -254,50 +255,41 @@ a {
     padding: 0;
   }
 
-  .y-k-navigation-link {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 16px;
+  .y-l-navigation-link {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .y-k-navigation-item-desk {
+  .y-l-navigation-item-desk {
     display: none;
   }
 }
-.y-k-home {
+.y-l-home {
+  margin: auto;
+  background: linear-gradient(180deg, #a2bcff 0%, #618cfb 100%);
+}
+.y-l-home-container {
   width: 375px;
   height: 812px;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
   background-image: url("/img/Hero.png");
-  margin: auto;
-}
-.y-k-home-container {
   width: 375px;
-  padding: 120px 16px 0px;
+  padding: 104px 16px 0px;
   margin: auto;
+  color: #ffffff;
 }
-.y-k-home-text {
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 22px;
-  leading-trim: NONE;
-  line-height: 130%;
-  letter-spacing: 0%;
-  text-align: center;
 
-  padding: 0px 70px 24px;
-}
-.y-k-home-title {
-  font-family: Goldman;
-  font-weight: 700;
-  font-style: Bold;
+.y-l-home-title {
+  font-family: Candal;
+  font-weight: 400;
+  font-style: Regular;
   font-size: 48px;
   leading-trim: NONE;
   line-height: 120%;
@@ -305,907 +297,745 @@ a {
   text-align: center;
 }
 
-.y-k-home-text-two {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+.y-l-home-text-two {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
   text-align: center;
-  padding: 40px 0 64px;
-}
-.y-k-home-div {
-  display: flex;
 
-  justify-content: center;
+  padding: 234px 0 0px;
 }
-.y-k-home-link {
-  transition: all 0.3s ease-in-out;
-
-  background: #ffffff;
-  width: 256px;
-
-  border-radius: 28px;
-  padding-top: 12px;
-
-  padding-bottom: 12px;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  text-decoration: none;
-  color: #170f23;
-}
-
-.y-k-home-link:hover {
-  background: #da1c5c;
-  color: #ffffff;
-}
-.y-k-home-title-span {
-  display: none;
-}
-@media screen and (min-width: 1206px) {
-  .y-k-home {
+@media screen and (min-width: 1207px) {
+  .y-l-home-container {
     width: 1440px;
-    height: 607px;
+    padding: 112px 160px 0px;
+    width: 1440px;
+    height: 759px;
     background-image: url("/img/Hero\ \(1\).png");
   }
-  .y-k-home-title-span {
-    display: inline;
-  }
-  .y-k-home-container {
-    width: 1440px;
-    padding: 124px 160px 0px;
-  }
-  .y-k-home-container-top {
+  .y-l-home-container-top {
     display: flex;
     flex-direction: column;
+    align-items: center;
   }
 
-  .y-k-home-title {
-    font-family: Goldman;
+  .y-l-home-title {
+    font-family: Candal;
     font-weight: 400;
     font-style: Regular;
-    font-size: 88px;
+    font-size: 64px;
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0%;
     text-align: center;
   }
 
-  .y-k-home-text {
-    font-family: Familjen Grotesk;
+  .y-l-home-text-two {
+    font-family: Quicksand;
     font-weight: 500;
     font-style: Medium;
-    font-size: 24px;
-    leading-trim: NONE;
-    line-height: 130%;
-    letter-spacing: 0%;
-    text-align: center;
-
-    padding: 0px 0 24px;
-  }
-  .y-k-home-text-two {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
-    padding: 40px 0 68px;
-  }
-  .y-k-home-div {
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }
-  .y-k-home-link {
-    transition: all 0.3s ease-in-out;
-    width: 256px;
-
-    border-radius: 28px;
-    padding-top: 12px;
-
-    padding-bottom: 12px;
+    width: 872px;
+    padding: 321px 0 0px;
   }
 }
-.y-k-about {
+.y-l-about {
   margin: auto;
+  background: linear-gradient(180deg, #a2bcff 0%, #618cfb 100%);
+}
+.y-l-about-container {
   width: 375px;
-  height: 511px;
+  height: 711px;
+  color: #ffffff;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  background-image: url("/img/Featured\ Article\ of\ the\ Month.png");
-}
-.y-k-about-container {
-  width: 375px;
+  background-image: url("/img/About\ Us.png");
   padding: 40px 16px 0px;
   margin: auto;
 }
-.y-k-about-title-div {
+.y-l-about-title-div {
   display: flex;
   flex-direction: column;
-  gap: 202px;
+  gap: 32px;
 }
-.y-k-about-title {
-  font-family: Goldman;
+.y-l-about-title {
+  font-family: Candal;
   font-weight: 400;
   font-style: Regular;
-  font-size: 36px;
+  font-size: 32px;
   leading-trim: NONE;
   line-height: 120%;
   letter-spacing: 0%;
-  text-align: center;
 }
-.y-k-about-title-text {
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
+.y-l-about-title-text {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
   font-size: 22px;
   leading-trim: NONE;
   line-height: 130%;
   letter-spacing: 0%;
-  text-align: center;
 
-  color: #da1c5c;
   padding-top: 8px;
 }
-.y-k-about-text {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+.y-l-about-text {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  text-align: center;
 }
 
-@media screen and (min-width: 1206px) {
-  .y-k-about {
+@media screen and (min-width: 1207px) {
+  .y-l-about-container {
     width: 1440px;
-    height: 689px;
-    background-image: url("/img/Featured\ Article\ of\ the\ Month\ \(1\).png");
+    height: 464px;
+    background-image: url("/img/About\ Us\ \(1\).png");
+    padding: 80px 160px 0px;
+    margin: auto;
   }
-  .y-k-about-container {
-    width: 1440px;
-    padding: 80px 160px 0;
-  }
-  .y-k-about-title-div {
+  .y-l-about-title-div {
     display: flex;
-
-    gap: 411px;
+    flex-direction: column;
+    gap: 40px;
   }
-  .y-k-about-title {
-    font-family: Goldman;
+  .y-l-about-title {
+    font-family: Candal;
     font-weight: 400;
     font-style: Regular;
-    font-size: 52px;
+    font-size: 48px;
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0%;
   }
-  .y-k-about-title-text {
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 24px;
+  .y-l-about-title-text {
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
     leading-trim: NONE;
     line-height: 130%;
     letter-spacing: 0%;
   }
-  .y-k-about-text {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
+  .y-l-about-text {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
+    width: 544px;
   }
 }
 
-.y-k-why-container {
+.y-l-why-container {
   margin: auto;
   width: 375px;
   padding: 40px 16px;
 }
-.y-k-about-title-div-why {
+.y-l-about-title-div-why {
   gap: 32px;
+  align-items: center;
+  text-align: center;
 }
-.y-k-about-text-bold-why {
+
+.y-l-why-list {
   padding-top: 24px;
-
-  font-weight: 510;
-  font-style: Medium;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-}
-.y-k-why-list {
-  padding-top: 32px;
   display: flex;
   flex-direction: column;
-  gap: 32px;
-  align-items: center;
+  gap: 24px;
 }
-.y-k-why-item {
-  display: flex;
-  flex-direction: column;
-  gap: 8px;
-  align-items: center;
-  width: 256px;
-}
-.y-k-why-img {
-  width: 256px;
-}
-.y-k-why-text-bold {
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 18px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.y-k-why-text {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-why-container {
-    margin: auto;
-    width: 1440px;
-    padding: 80px 160px;
-  }
-
-  .y-k-about-title-div-why {
-    gap: 64px;
-  }
-
-  .y-k-why-list {
-    padding-top: 32px;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-    align-items: center;
-  }
-  .y-k-why-item {
-    width: 256px;
-    gap: 8px;
-  }
-  .y-k-why-text-bold {
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-  .y-k-why-text {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-}
-
-.y-k-uniqueness {
-  margin: auto;
-  width: 375px;
-  height: 663px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/The\ Quest\ &\ Arena\ Map.png");
-}
-.y-k-uniqueness-text-bold {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  padding: 32px 0 240px;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-uniqueness {
-    width: 1440px;
-    height: 1041px;
-    background-image: url("/img/The\ Quest\ &\ Arena\ Map\ \(1\).png");
-  }
-  .y-k-uniqueness-text-bold {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-
-    padding: 24px 0 564px;
-  }
-}
-.y-k-how {
-  margin: auto;
-  width: 375px;
-  height: 684px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/Esports\ Passport.png");
-}
-.y-k-how-container {
-  margin: auto;
-
-  padding: 40px 16px 0;
-}
-.y-k-about-text-how {
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-}
-.y-k-how-list {
-  padding: 282px 0 0px;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  list-style-type: disc;
-  margin-left: 20px;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-how {
-    width: 1440px;
-    height: 617px;
-    background-image: url("/img/Esports\ Passport\ \(1\).png");
-  }
-  .y-k-how-container {
-    margin: auto;
-
-    padding: 80px 352px 0;
-  }
-  .y-k-about-text-how {
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
-  }
-  .y-k-how-list {
-    padding: 32px 0 0px;
-
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    width: 332px;
-    margin-left: 20px;
-  }
-}
-
-.y-k-reviews-container {
-  margin: auto;
-  width: 375px;
-  padding: 40px 16px;
-}
-.y-k-reviews-list {
-  padding-top: 32px;
-}
-.y-k-reviews-lists {
-  display: none;
-}
-.y-k-reviews-item {
-  margin: 0 8px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-image: url("/img/Testimonial\ Container.png");
-  width: 327px;
-  height: 149px;
+.y-l-why-item {
   padding-top: 8px;
   padding-right: 16px;
   padding-bottom: 8px;
   padding-left: 16px;
+  border-radius: 16px;
+
+  background: linear-gradient(180deg, #fdeef3 0%, #ffffff 100%);
 }
 
-.y-k-reviews-text-bold {
-  font-family: Familjen Grotesk;
+.y-l-why-text-bold {
+  font-family: Candal;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 32px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(90deg, #f43b8e 0%, #f77d4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.y-l-why-text {
+  font-family: Candal;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+  background: linear-gradient(90deg, #f43b8e 0%, #f77d4a 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.y-l-why-item-two {
+  background: linear-gradient(180deg, #e8f9fe 0%, #ffffff 100%);
+}
+.y-l-why-text-two {
+  background: linear-gradient(90deg, #38c3fd 0%, #5ee1ce 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media screen and (min-width: 1207px) {
+  .y-l-why-container {
+    margin: auto;
+    width: 1440px;
+    padding: 80px 160px;
+  }
+
+  .y-l-about-title-div-why {
+    gap: 40px;
+  }
+
+  .y-l-why-list {
+    padding-top: 40px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .y-l-why-item {
+    width: 256px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-radius: 16px;
+  }
+
+  .y-l-why-text-bold {
+    font-family: Candal;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 48px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .y-l-why-text {
+    font-family: Candal;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.y-l-uniqueness-container {
+  margin: auto;
+  width: 375px;
+  padding: 40px 16px;
+}
+
+.y-l-uniqueness-list {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.y-l-uniqueness-item {
+  width: 256px;
+  height: 289px;
+
+  padding: 120px 16px;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img//Top\ games\ container.png");
+}
+
+.y-l-uniqueness-link {
+  font-family: Quicksand;
   font-weight: 500;
   font-style: Medium;
   font-size: 18px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #da1c5c;
-}
-.y-k-reviews-text-bold-two {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 11px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
+  color: #ffffff;
+  text-decoration: none;
+  text-align: center;
+  width: 256px;
+  padding-top: 12px;
+
+  padding-bottom: 12px;
+  border-radius: 16px;
+  display: block;
+  margin: 40px auto 0;
+  transition: all 0.3s ease-in-out;
+  background: linear-gradient(90deg, #f43b8e 0%, #f77d4a 100%);
 }
 
-.y-k-reviews-text {
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Italic;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  padding-top: 16px;
+.y-l-uniqueness-link:hover,
+.y-l-uniqueness-link:focus {
+  background: linear-gradient(90deg, #f77d4a 0%, #f43b8e 100%);
+  transform: scale(1.1);
 }
-
-@media screen and (min-width: 1206px) {
-  .y-k-reviews-container {
+@media screen and (min-width: 1207px) {
+  .y-l-uniqueness-container {
+    margin: auto;
     width: 1440px;
     padding: 80px 160px;
   }
 
-  .y-k-reviews-list {
-    display: none;
-  }
-  .y-k-reviews-lists {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
-    padding-top: 64px;
-  }
-  .y-k-reviews-item {
-    margin: 0;
-    width: 352px;
-    height: 161px;
-    padding-top: 8px;
-    padding-right: 16px;
-    padding-bottom: 8px;
-    padding-left: 16px;
-    border-width: 1px;
-  }
-
-  .y-k-reviews-text-bold {
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 20px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-  .y-k-reviews-text-bold-two {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 12px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-
-  .y-k-reviews-text {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Italic;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-  }
-}
-.y-k-join-container {
-  padding: 40px 16px;
-  width: 375px;
-  margin: auto;
-}
-
-.y-k-join-list {
-  padding-top: 40px;
-
-  display: flex;
-  flex-direction: column;
-  gap: 32px;
-  align-items: center;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-join-container {
-    padding: 80px 304px;
-    width: 1440px;
-    margin: auto;
-  }
-  .y-k-join-list {
-    padding-top: 32px;
-
+  .y-l-uniqueness-list {
+    padding-top: 40px;
     display: flex;
     flex-direction: row;
     gap: 32px;
     align-items: center;
   }
-}
+  .y-l-uniqueness-item {
+    width: 256px;
+    height: 289px;
 
-.y-k-faq-container {
-  padding: 40px 16px;
-  width: 375px;
-  margin: auto;
-}
-.y-k-faq-list {
-  padding-top: 24px;
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-
-.y-k-faq-item {
-  border: 1px solid #da1c5c;
-  gap: 16px;
-  border-radius: 16px;
-  padding: 11px 15px;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
-  font-size: 16px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  display: flex;
-  align-items: start;
-}
-.y-k-faq-img {
-  width: 32px;
-  height: 32px;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-faq-container {
-    padding: 80px 160px;
-    width: 1440px;
-    margin: auto;
+    padding: 117px 16px;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
   }
 
-  .y-k-faq-list {
-    padding-top: 32px;
-    padding-bottom: 64px;
-    display: flex;
-    flex-direction: row;
-    gap: 32px;
-  }
-
-  .y-k-faq-item {
-    width: 352px;
-
-    gap: 16px;
-    border-radius: 16px;
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
+  .y-l-uniqueness-link {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
   }
 }
-.y-k-community-container {
-  padding: 40px 16px;
-  width: 375px;
+
+.y-l-how-container {
   margin: auto;
+  width: 375px;
+  padding: 40px 16px;
 }
-
-.y-k-community-text {
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
-  font-size: 20px;
-  leading-trim: NONE;
-  line-height: 150%;
-  letter-spacing: 0%;
-  text-align: center;
-  padding-top: 24px;
-}
-.y-k-community-list {
-  padding-top: 16px;
-  padding-bottom: 32px;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 16px;
-}
-
-.y-k-community-item {
-  border: 1px solid #da1c5c;
-  width: 163px;
-  gap: 16px;
-  border-radius: 16px;
-  padding: 11px 15px;
+.y-l-how-div {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+  gap: 24px;
+  padding-top: 32px;
+}
+.y-l-how-text {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  text-align: center;
+}
+.y-l-how-list {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
-.y-k-community-img {
-  width: 32px;
-  height: 32px;
-}
-
-@media screen and (min-width: 1206px) {
-  .y-k-community-container {
-    padding: 80px 160px;
-    width: 1440px;
+@media screen and (min-width: 1207px) {
+  .y-l-how-container {
     margin: auto;
+    width: 1440px;
+
+    padding: 80px 256px;
   }
-  .y-k-community-text {
-    font-family: Familjen Grotesk;
+  .y-l-how-div {
+    display: flex;
+    flex-direction: row;
+    gap: 128px;
+    padding-top: 40px;
+  }
+  .y-l-how-text {
+    font-family: Quicksand;
     font-weight: 500;
     font-style: Medium;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    width: 448px;
+  }
+  .y-l-how-list {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+
+.y-l-reviews-container {
+  margin: auto;
+  width: 375px;
+  color: #ffffff;
+  height: 342px;
+  padding: 40px 16px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Testimonials.png");
+}
+.y-l-reviews-list {
+  padding-top: 32px;
+}
+.y-l-reviews-lists {
+  display: none;
+}
+.y-l-reviews-item {
+  margin: 0 8px;
+  width: 256px;
+
+  border-radius: 16px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+  background: #fdeef3;
+}
+
+.y-l-reviews-text-bold {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  color: #f43b8e;
+}
+
+.y-l-reviews-text {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding-top: 16px;
+  color: #000;
+}
+
+@media screen and (min-width: 1207px) {
+  .y-l-reviews-container {
+    margin: auto;
+    width: 1440px;
+    color: #ffffff;
+    height: 499px;
+    padding: 80px 160px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url("/img//Testimonials\ \(1\).png");
+  }
+  .y-l-reviews-list {
+    display: none;
+  }
+  .y-l-reviews-lists {
+    display: flex;
+    gap: 32px;
+    padding-top: 40px;
+    align-items: start;
+  }
+  .y-l-reviews-item {
+    margin: 0;
+    width: 256px;
+    border-radius: 16px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+  }
+
+  .y-l-reviews-text-bold {
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .y-l-reviews-text {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+.y-l-faq-container {
+  padding: 40px 16px;
+  width: 375px;
+  height: 644px;
+  margin: auto;
+  color: #ffffff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Join\ Our\ Cozy\ Community.png");
+}
+
+@media screen and (min-width: 1207px) {
+  .y-l-faq-container {
+    padding: 80px 160px;
+    width: 1440px;
+    height: 655px;
+    margin: auto;
+
+    background-image: url("/img/Join\ Our\ Cozy\ Community\ \(1\).png");
+  }
+  .y-l-faq-text {
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
     font-size: 20px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
     text-align: center;
 
-    padding-top: 32px;
-  }
-  .y-k-community-list {
-    padding-top: 39px;
-    padding-bottom: 64px;
-
-    gap: 32px;
-  }
-
-  .y-k-community-item {
-    width: 256px;
-
-    left: 448px;
-    gap: 16px;
-    border-radius: 16px;
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
-    font-size: 18px;
-    leading-trim: NONE;
-    line-height: 150%;
-    letter-spacing: 0%;
-    text-align: center;
+    width: 544px;
   }
 }
-
-.y-k-container {
+.y-l-container {
   padding: 120px 16px 40px;
   width: 375px;
   margin: auto;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.y-k-container h1 {
-  font-family: Goldman;
+.y-l-container h1 {
+  font-family: Candal;
   font-weight: 400;
   font-style: Regular;
-  font-size: 36px;
+  font-size: 32px;
   leading-trim: NONE;
   line-height: 120%;
   letter-spacing: 0%;
 }
 
-.y-k-container h2 {
+.y-l-container h2 {
   margin-top: 10px;
-
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
   font-size: 22px;
   leading-trim: NONE;
   line-height: 130%;
   letter-spacing: 0%;
 }
 
-.y-k-container h3 {
+.y-l-container h3 {
   margin-top: 10px;
 
-  font-family: Familjen Grotesk;
-  font-weight: 500;
-  font-style: Medium;
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
   font-size: 18px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.y-k-container ul {
+.y-l-container ul {
   margin-top: 10px;
   list-style-type: disc;
   margin-left: 20px;
 }
 
-.y-k-container ul li {
+.y-l-container ul li {
   margin-bottom: 10px;
 }
-.y-k-container p {
+.y-l-container p {
   margin-top: 10px;
 }
-.y-k-container a {
+.y-l-container a {
   text-decoration: none;
   color: inherit;
   transition: all 0.3s ease-in-out;
 }
 
-.y-k-container a:hover {
+.y-l-container a:hover {
   text-decoration: underline;
 }
 
 strong {
   color: #000;
 }
-@media screen and (min-width: 1206px) {
-  .y-k-container {
+@media screen and (min-width: 1207px) {
+  .y-l-container {
     padding: 160px 160px 80px;
     width: 1440px;
     margin: auto;
 
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .y-k-container h1 {
-    font-family: Goldman;
+  .y-l-container h1 {
+    font-family: Candal;
     font-weight: 400;
     font-style: Regular;
-    font-size: 52px;
+    font-size: 48px;
     leading-trim: NONE;
-    line-height: 100%;
+    line-height: 120%;
     letter-spacing: 0%;
   }
 
-  .y-k-container h2 {
+  .y-l-container h2 {
     margin-top: 20px;
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
-    font-size: 24px;
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 28px;
     leading-trim: NONE;
     line-height: 130%;
     letter-spacing: 0%;
   }
 
-  .y-k-container h3 {
+  .y-l-container h3 {
     margin-top: 20px;
 
-    font-family: Familjen Grotesk;
-    font-weight: 500;
-    font-style: Medium;
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
     font-size: 20px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
   }
 
-  .y-k-container ul {
+  .y-l-container ul {
     margin-top: 20px;
   }
 
-  .y-k-container ul li {
+  .y-l-container ul li {
     margin-bottom: 10px;
   }
-  .y-k-container p {
+  .y-l-container p {
     margin-top: 20px;
   }
 }
 
-.y-k-footer-container {
+.y-l-footer-container {
   width: 375px;
   margin: auto;
   padding: 40px 16px 40px;
   display: flex;
   flex-direction: column;
-
+  background: #4b2400;
+  color: #ffffff;
   gap: 40px;
 }
 
-.y-k-footer-wrapper {
+.y-l-footer-wrapper {
   display: flex;
   flex-direction: column;
 
   gap: 16px;
 }
 
-.y-k-footer-text {
+.y-l-footer-text {
   text-decoration: none;
   color: inherit;
 
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
 }
 
-.y-k-footer-copyright {
-  color: #f4f4f4;
+.y-l-footer-copyright {
+  color: #ffffff;
   text-decoration: none;
-  font-family: Familjen Grotesk;
-  font-weight: 400;
-  font-style: Regular;
+  font-family: Quicksand;
+  font-weight: 500;
+  font-style: Medium;
   font-size: 16px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-
-  margin-top: 17px;
 }
-.y-k-footer-div {
+.y-l-footer-div {
   display: flex;
   flex-direction: column;
 
   gap: 40px;
 }
-.y-k-footer-copyright-two {
-  font-family: Familjen Grotesk;
+.y-l-footer-copyright-two {
+  font-family: Quicksand;
   font-weight: 400;
   font-style: Regular;
   font-size: 11px;
@@ -1214,20 +1044,63 @@ strong {
   letter-spacing: 0%;
   text-align: center;
 }
-@media screen and (min-width: 1206px) {
-  .y-k-footer-container {
+.y-l-footer-d {
+  display: flex;
+  flex-direction: column;
+
+  gap: 24px;
+}
+.y-l-footer-dt {
+  font-family: Candal;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  color: #38c3fd;
+}
+.y-l-footer-dd {
+  font-family: Quicksand;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+@media screen and (min-width: 1207px) {
+  .y-l-footer-dt {
+    font-family: Candal;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 120%;
+    letter-spacing: 0%;
+  }
+  .y-l-footer-dd {
+    font-family: Quicksand;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .y-l-footer-container {
     width: 1440px;
     padding: 40px 160px;
     display: flex;
   }
-  .y-k-footer-div {
+  .y-l-footer-div {
     display: flex;
     flex-direction: row;
 
-    gap: 707px;
+    gap: 137px;
   }
-  .y-k-footer-copyright-two {
-    font-family: Familjen Grotesk;
+  .y-l-footer-copyright-two {
+    font-family: Quicksand;
     font-weight: 400;
     font-style: Regular;
     font-size: 12px;
@@ -1236,7 +1109,7 @@ strong {
     letter-spacing: 0%;
     text-align: center;
   }
-  .y-k-footer-wrapper {
+  .y-l-footer-wrapper {
     display: flex;
 
     justify-content: end;
@@ -1244,10 +1117,10 @@ strong {
     gap: 16px;
   }
 
-  .y-k-footer-text {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
+  .y-l-footer-text {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
@@ -1255,42 +1128,42 @@ strong {
     text-align: right;
   }
 
-  .y-k-footer-copyright {
-    font-family: Familjen Grotesk;
-    font-weight: 400;
-    font-style: Regular;
+  .y-l-footer-copyright {
+    font-family: Quicksand;
+    font-weight: 500;
+    font-style: Medium;
     font-size: 18px;
     leading-trim: NONE;
     line-height: 150%;
     letter-spacing: 0%;
-    margin-top: 16px;
   }
 }
 
-.y-k-cookie-popup {
+.y-l-cookie-popup {
   position: fixed;
   bottom: 10px;
   width: 375px;
   padding: 32px;
   border-radius: 32px;
-  background: #170f23;
+  background: #0c0c0c;
 
   z-index: 1000;
   display: none;
 }
 
-.y-k-cookie-popup-text-two {
-  font-family: Familjen Grotesk;
+.y-l-cookie-popup-text-two {
+  font-family: Quicksand;
   font-weight: 400;
   font-style: Regular;
   font-size: 18px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
+  color: #ffffff;
   text-align: center;
 }
 
-.y-k-cookie-button-container {
+.y-l-cookie-button-container {
   padding: 40px 0 0;
   margin: auto;
   display: flex;
@@ -1300,9 +1173,9 @@ strong {
   gap: 15px;
 }
 
-.y-k-cookie-button {
+.y-l-cookie-button {
   background-color: transparent;
-  border: 1px solid #da1c5c;
+  border: 1px solid #ffffff;
   width: 256px;
 
   padding-top: 12px;
@@ -1310,23 +1183,24 @@ strong {
   padding-bottom: 12px;
 
   border-radius: 28px;
-  font-family: Familjen Grotesk;
+  font-family: Quicksand;
   font-weight: 500;
   font-style: Medium;
   font-size: 20px;
   leading-trim: NONE;
   line-height: 150%;
   letter-spacing: 0%;
-  color: #da1c5c;
+  color: #ffffff;
 }
 
 #accept-cookies {
   border: none;
-  background: #f4f4f4;
+  background: #baf3ed;
+
   color: #000000;
 }
 
-.y-k-close-popup {
+.y-l-close-popup {
   position: absolute;
   top: 10px;
   right: 10px;
@@ -1334,15 +1208,15 @@ strong {
   cursor: pointer;
 }
 
-@media screen and (min-width: 1206px) {
-  .y-k-cookie-popup-container {
+@media screen and (min-width: 1207px) {
+  .y-l-cookie-popup-container {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 90px;
+    gap: 140px;
   }
 
-  .y-k-cookie-popup-text-two {
+  .y-l-cookie-popup-text-two {
     font-weight: 400;
     font-style: Regular;
     font-size: 18px;
@@ -1353,7 +1227,7 @@ strong {
     width: 622px;
   }
 
-  .y-k-cookie-button-container {
+  .y-l-cookie-button-container {
     padding: 0;
     margin: auto;
     display: flex;
@@ -1361,7 +1235,7 @@ strong {
     gap: 32px;
   }
 
-  .y-k-cookie-popup {
+  .y-l-cookie-popup {
     position: fixed;
     bottom: 10px;
     width: 1440px;
