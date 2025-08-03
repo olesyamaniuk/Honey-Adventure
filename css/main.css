@@ -1,0 +1,1371 @@
+@import url("https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Goldman:wght@400;700&display=swap");
+
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #170f23;
+
+  color: #ffffff;
+}
+
+body {
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+dl,
+dt,
+dd {
+  margin: 0;
+  padding: 0;
+}
+img {
+  display: block;
+  height: auto;
+}
+figure {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+.list {
+  list-style: none;
+}
+
+button,
+a {
+  cursor: pointer;
+}
+
+.button:hover {
+  scale: 120%;
+}
+
+.y-k-header.is-open .y-k-header-background {
+  left: 0;
+}
+.y-k-header-button-wrapper {
+  margin-left: auto;
+}
+.y-k-header-icon {
+  display: none;
+}
+
+.y-k-header-icon-button {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+.y-k-navigation-list.is-open {
+  right: 0;
+}
+.y-k-header-icon-menu {
+  display: block;
+}
+
+.y-k-header-icon-button.is-open .y-k-header-icon-menu {
+  display: none;
+}
+
+.y-k-header-icon-button.is-open .y-k-header-icon-close {
+  display: block;
+}
+
+.y-k-header {
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+  transition: background-color 0.3s ease;
+  background: transparent;
+  display: flex;
+  height: 80px;
+}
+
+.y-k-header-background {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 100%;
+  z-index: -1;
+  transition: left 0.3s ease;
+}
+.y-k-header.is-open .y-k-header-background {
+  left: 0;
+}
+.y-k-header-button-wrapper {
+  margin-right: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.y-k-header-icon-menu {
+  display: block;
+}
+
+.y-k-header-icon-button.is-open .y-k-header-icon-menu {
+  display: none;
+}
+
+.y-k-header-icon-button.is-open .y-k-header-icon-close {
+  display: block;
+}
+
+.y-k-navigation {
+  display: -ms-flexbox;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 8px 16px;
+  position: relative;
+}
+
+.y-k-navigation-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: auto;
+  transition: 0.3s;
+  z-index: 999;
+  padding: 0px 16px 26px;
+  border-radius: 24px;
+  gap: 28px;
+  background: #170f23;
+
+  margin-top: 16px;
+}
+
+.y-k-navigation-list.is-open {
+  right: 0;
+}
+
+.y-k-navigation-link {
+  transition: all 0.3s ease-in-out;
+  text-decoration: none;
+  color: #f4f4f4;
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.y-k-navigation-link:hover,
+.y-k-navigation-link:focus {
+  color: #da1c5c;
+}
+
+.y-k-header.is-open {
+  background-color: transparent;
+}
+
+.y-k-navigation-img {
+  display: none;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-navigation-img {
+    display: flex;
+    margin-right: 430px;
+  }
+  .y-k-header-icon-title {
+    display: none;
+  }
+  .y-k-header-button-wrapper {
+    display: none;
+  }
+  .y-k-header {
+    height: 64px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+
+    backdrop-filter: blur(48px);
+    background: #170f2303;
+  }
+
+  .y-k-header-background {
+  }
+  .y-k-header-icon-button {
+    display: none;
+  }
+  .y-k-navigation {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    padding: 0;
+    width: 1440px;
+    margin: auto;
+  }
+
+  .y-k-navigation-list {
+    background-color: transparent;
+    flex-direction: row;
+    display: flex;
+    position: static;
+    width: 1440px;
+    margin: auto;
+    padding-block: 0;
+    flex: 1;
+    gap: 40px;
+    height: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+  }
+
+  .y-k-navigation-link {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 16px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-navigation-item-desk {
+    display: none;
+  }
+}
+.y-k-home {
+  width: 375px;
+  height: 812px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Hero.png");
+  margin: auto;
+}
+.y-k-home-container {
+  width: 375px;
+  padding: 120px 16px 0px;
+  margin: auto;
+}
+.y-k-home-text {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  padding: 0px 70px 24px;
+}
+.y-k-home-title {
+  font-family: Goldman;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 48px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.y-k-home-text-two {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 40px 0 64px;
+}
+.y-k-home-div {
+  display: flex;
+
+  justify-content: center;
+}
+.y-k-home-link {
+  transition: all 0.3s ease-in-out;
+
+  background: #ffffff;
+  width: 256px;
+
+  border-radius: 28px;
+  padding-top: 12px;
+
+  padding-bottom: 12px;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  text-decoration: none;
+  color: #170f23;
+}
+
+.y-k-home-link:hover {
+  background: #da1c5c;
+  color: #ffffff;
+}
+.y-k-home-title-span {
+  display: none;
+}
+@media screen and (min-width: 1206px) {
+  .y-k-home {
+    width: 1440px;
+    height: 607px;
+    background-image: url("/img/Hero\ \(1\).png");
+  }
+  .y-k-home-title-span {
+    display: inline;
+  }
+  .y-k-home-container {
+    width: 1440px;
+    padding: 124px 160px 0px;
+  }
+  .y-k-home-container-top {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .y-k-home-title {
+    font-family: Goldman;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 88px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+
+  .y-k-home-text {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    padding: 0px 0 24px;
+  }
+  .y-k-home-text-two {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+    padding: 40px 0 68px;
+  }
+  .y-k-home-div {
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+  .y-k-home-link {
+    transition: all 0.3s ease-in-out;
+    width: 256px;
+
+    border-radius: 28px;
+    padding-top: 12px;
+
+    padding-bottom: 12px;
+  }
+}
+.y-k-about {
+  margin: auto;
+  width: 375px;
+  height: 511px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Featured\ Article\ of\ the\ Month.png");
+}
+.y-k-about-container {
+  width: 375px;
+  padding: 40px 16px 0px;
+  margin: auto;
+}
+.y-k-about-title-div {
+  display: flex;
+  flex-direction: column;
+  gap: 202px;
+}
+.y-k-about-title {
+  font-family: Goldman;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.y-k-about-title-text {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 130%;
+  letter-spacing: 0%;
+  text-align: center;
+
+  color: #da1c5c;
+  padding-top: 8px;
+}
+.y-k-about-text {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-about {
+    width: 1440px;
+    height: 689px;
+    background-image: url("/img/Featured\ Article\ of\ the\ Month\ \(1\).png");
+  }
+  .y-k-about-container {
+    width: 1440px;
+    padding: 80px 160px 0;
+  }
+  .y-k-about-title-div {
+    display: flex;
+
+    gap: 411px;
+  }
+  .y-k-about-title {
+    font-family: Goldman;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 52px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+  .y-k-about-title-text {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+  }
+  .y-k-about-text {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+
+.y-k-why-container {
+  margin: auto;
+  width: 375px;
+  padding: 40px 16px;
+}
+.y-k-about-title-div-why {
+  gap: 32px;
+}
+.y-k-about-text-bold-why {
+  padding-top: 24px;
+
+  font-weight: 510;
+  font-style: Medium;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+.y-k-why-list {
+  padding-top: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+.y-k-why-item {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
+  width: 256px;
+}
+.y-k-why-img {
+  width: 256px;
+}
+.y-k-why-text-bold {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.y-k-why-text {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-why-container {
+    margin: auto;
+    width: 1440px;
+    padding: 80px 160px;
+  }
+
+  .y-k-about-title-div-why {
+    gap: 64px;
+  }
+
+  .y-k-why-list {
+    padding-top: 32px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+  .y-k-why-item {
+    width: 256px;
+    gap: 8px;
+  }
+  .y-k-why-text-bold {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .y-k-why-text {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.y-k-uniqueness {
+  margin: auto;
+  width: 375px;
+  height: 663px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/The\ Quest\ &\ Arena\ Map.png");
+}
+.y-k-uniqueness-text-bold {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding: 32px 0 240px;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-uniqueness {
+    width: 1440px;
+    height: 1041px;
+    background-image: url("/img/The\ Quest\ &\ Arena\ Map\ \(1\).png");
+  }
+  .y-k-uniqueness-text-bold {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    padding: 24px 0 564px;
+  }
+}
+.y-k-how {
+  margin: auto;
+  width: 375px;
+  height: 684px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Esports\ Passport.png");
+}
+.y-k-how-container {
+  margin: auto;
+
+  padding: 40px 16px 0;
+}
+.y-k-about-text-how {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+.y-k-how-list {
+  padding: 282px 0 0px;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-how {
+    width: 1440px;
+    height: 617px;
+    background-image: url("/img/Esports\ Passport\ \(1\).png");
+  }
+  .y-k-how-container {
+    margin: auto;
+
+    padding: 80px 352px 0;
+  }
+  .y-k-about-text-how {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .y-k-how-list {
+    padding: 32px 0 0px;
+
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    width: 332px;
+    margin-left: 20px;
+  }
+}
+
+.y-k-reviews-container {
+  margin: auto;
+  width: 375px;
+  padding: 40px 16px;
+}
+.y-k-reviews-list {
+  padding-top: 32px;
+}
+.y-k-reviews-lists {
+  display: none;
+}
+.y-k-reviews-item {
+  margin: 0 8px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/img/Testimonial\ Container.png");
+  width: 327px;
+  height: 149px;
+  padding-top: 8px;
+  padding-right: 16px;
+  padding-bottom: 8px;
+  padding-left: 16px;
+}
+
+.y-k-reviews-text-bold {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #da1c5c;
+}
+.y-k-reviews-text-bold-two {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.y-k-reviews-text {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Italic;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  padding-top: 16px;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-reviews-container {
+    width: 1440px;
+    padding: 80px 160px;
+  }
+
+  .y-k-reviews-list {
+    display: none;
+  }
+  .y-k-reviews-lists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+    padding-top: 64px;
+  }
+  .y-k-reviews-item {
+    margin: 0;
+    width: 352px;
+    height: 161px;
+    padding-top: 8px;
+    padding-right: 16px;
+    padding-bottom: 8px;
+    padding-left: 16px;
+    border-width: 1px;
+  }
+
+  .y-k-reviews-text-bold {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+  .y-k-reviews-text-bold-two {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-reviews-text {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Italic;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+.y-k-join-container {
+  padding: 40px 16px;
+  width: 375px;
+  margin: auto;
+}
+
+.y-k-join-list {
+  padding-top: 40px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  align-items: center;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-join-container {
+    padding: 80px 304px;
+    width: 1440px;
+    margin: auto;
+  }
+  .y-k-join-list {
+    padding-top: 32px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+    align-items: center;
+  }
+}
+
+.y-k-faq-container {
+  padding: 40px 16px;
+  width: 375px;
+  margin: auto;
+}
+.y-k-faq-list {
+  padding-top: 24px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.y-k-faq-item {
+  border: 1px solid #da1c5c;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 11px 15px;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  display: flex;
+  align-items: start;
+}
+.y-k-faq-img {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-faq-container {
+    padding: 80px 160px;
+    width: 1440px;
+    margin: auto;
+  }
+
+  .y-k-faq-list {
+    padding-top: 32px;
+    padding-bottom: 64px;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .y-k-faq-item {
+    width: 352px;
+
+    gap: 16px;
+    border-radius: 16px;
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+}
+.y-k-community-container {
+  padding: 40px 16px;
+  width: 375px;
+  margin: auto;
+}
+
+.y-k-community-text {
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+  padding-top: 24px;
+}
+.y-k-community-list {
+  padding-top: 16px;
+  padding-bottom: 32px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.y-k-community-item {
+  border: 1px solid #da1c5c;
+  width: 163px;
+  gap: 16px;
+  border-radius: 16px;
+  padding: 11px 15px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.y-k-community-img {
+  width: 32px;
+  height: 32px;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-community-container {
+    padding: 80px 160px;
+    width: 1440px;
+    margin: auto;
+  }
+  .y-k-community-text {
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+
+    padding-top: 32px;
+  }
+  .y-k-community-list {
+    padding-top: 39px;
+    padding-bottom: 64px;
+
+    gap: 32px;
+  }
+
+  .y-k-community-item {
+    width: 256px;
+
+    left: 448px;
+    gap: 16px;
+    border-radius: 16px;
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+}
+
+.y-k-container {
+  padding: 120px 16px 40px;
+  width: 375px;
+  margin: auto;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.y-k-container h1 {
+  font-family: Goldman;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 36px;
+  leading-trim: NONE;
+  line-height: 120%;
+  letter-spacing: 0%;
+}
+
+.y-k-container h2 {
+  margin-top: 10px;
+
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 22px;
+  leading-trim: NONE;
+  line-height: 130%;
+  letter-spacing: 0%;
+}
+
+.y-k-container h3 {
+  margin-top: 10px;
+
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.y-k-container ul {
+  margin-top: 10px;
+  list-style-type: disc;
+  margin-left: 20px;
+}
+
+.y-k-container ul li {
+  margin-bottom: 10px;
+}
+.y-k-container p {
+  margin-top: 10px;
+}
+.y-k-container a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease-in-out;
+}
+
+.y-k-container a:hover {
+  text-decoration: underline;
+}
+
+strong {
+  color: #000;
+}
+@media screen and (min-width: 1206px) {
+  .y-k-container {
+    padding: 160px 160px 80px;
+    width: 1440px;
+    margin: auto;
+
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-container h1 {
+    font-family: Goldman;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 52px;
+    leading-trim: NONE;
+    line-height: 100%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-container h2 {
+    margin-top: 20px;
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 24px;
+    leading-trim: NONE;
+    line-height: 130%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-container h3 {
+    margin-top: 20px;
+
+    font-family: Familjen Grotesk;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 20px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+  }
+
+  .y-k-container ul {
+    margin-top: 20px;
+  }
+
+  .y-k-container ul li {
+    margin-bottom: 10px;
+  }
+  .y-k-container p {
+    margin-top: 20px;
+  }
+}
+
+.y-k-footer-container {
+  width: 375px;
+  margin: auto;
+  padding: 40px 16px 40px;
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+
+.y-k-footer-wrapper {
+  display: flex;
+  flex-direction: column;
+
+  gap: 16px;
+}
+
+.y-k-footer-text {
+  text-decoration: none;
+  color: inherit;
+
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.y-k-footer-copyright {
+  color: #f4f4f4;
+  text-decoration: none;
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 16px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+
+  margin-top: 17px;
+}
+.y-k-footer-div {
+  display: flex;
+  flex-direction: column;
+
+  gap: 40px;
+}
+.y-k-footer-copyright-two {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 11px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+@media screen and (min-width: 1206px) {
+  .y-k-footer-container {
+    width: 1440px;
+    padding: 40px 160px;
+    display: flex;
+  }
+  .y-k-footer-div {
+    display: flex;
+    flex-direction: row;
+
+    gap: 707px;
+  }
+  .y-k-footer-copyright-two {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 12px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: center;
+  }
+  .y-k-footer-wrapper {
+    display: flex;
+
+    justify-content: end;
+    align-items: end;
+    gap: 16px;
+  }
+
+  .y-k-footer-text {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: right;
+  }
+
+  .y-k-footer-copyright {
+    font-family: Familjen Grotesk;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    margin-top: 16px;
+  }
+}
+
+.y-k-cookie-popup {
+  position: fixed;
+  bottom: 10px;
+  width: 375px;
+  padding: 32px;
+  border-radius: 32px;
+  background: #170f23;
+
+  z-index: 1000;
+  display: none;
+}
+
+.y-k-cookie-popup-text-two {
+  font-family: Familjen Grotesk;
+  font-weight: 400;
+  font-style: Regular;
+  font-size: 18px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  text-align: center;
+}
+
+.y-k-cookie-button-container {
+  padding: 40px 0 0;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.y-k-cookie-button {
+  background-color: transparent;
+  border: 1px solid #da1c5c;
+  width: 256px;
+
+  padding-top: 12px;
+
+  padding-bottom: 12px;
+
+  border-radius: 28px;
+  font-family: Familjen Grotesk;
+  font-weight: 500;
+  font-style: Medium;
+  font-size: 20px;
+  leading-trim: NONE;
+  line-height: 150%;
+  letter-spacing: 0%;
+  color: #da1c5c;
+}
+
+#accept-cookies {
+  border: none;
+  background: #f4f4f4;
+  color: #000000;
+}
+
+.y-k-close-popup {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 1206px) {
+  .y-k-cookie-popup-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 90px;
+  }
+
+  .y-k-cookie-popup-text-two {
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 18px;
+    leading-trim: NONE;
+    line-height: 150%;
+    letter-spacing: 0%;
+    text-align: left;
+    width: 622px;
+  }
+
+  .y-k-cookie-button-container {
+    padding: 0;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+    gap: 32px;
+  }
+
+  .y-k-cookie-popup {
+    position: fixed;
+    bottom: 10px;
+    width: 1440px;
+    padding: 32px;
+    display: none;
+  }
+}
